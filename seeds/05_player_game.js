@@ -1,5 +1,5 @@
 exports.seed = function(knex, Promise) {
-  return knex.raw('DELETE FROM "player_game"; ALTER SEQUENCE player_game_id_seq RESTART WITH 5;')
+  return knex.raw('DELETE FROM "player_game"; ALTER SEQUENCE player_game_id_seq RESTART WITH 23;')
     .then(() => {
       let gameStats = [{
         id: 1,
