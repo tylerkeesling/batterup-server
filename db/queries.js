@@ -29,11 +29,10 @@ module.exports = {
       .into('game')
       .returning('id')
   },
-  createPlayerGame: (game_id, playerIds) => {
-    playerIds.forEach(id => {
-      return knex.insert({ 'player_id': playerIds, 'game_id': game_id })
+  createPlayerGame: (game_id, player_id) => {
+      return knex.insert({ 'player_id': player_id, 'game_id': game_id })
       .into('player_game')
-    })
+      .returning('*')
   },
   seePlayerGame: () => {
     return knex('player_game')

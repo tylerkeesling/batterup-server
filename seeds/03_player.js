@@ -94,12 +94,12 @@ exports.seed = function(knex, Promise) {
       }, {
         id: 11,
         team_id: 1,
-        name: 'Alex Littleton',
-        phone: '7193932436',
-        email: 'tyler.keesling@gmail.com',
+        name: 'Nick Dahl',
+        phone: '3035026452',
+        email: 'nicholas.b.dahl@gmail.com',
         password: 'password' ,
-        position: 'Pitcher',
-        bio: 'lorem ipsum'
+        position: '3rd Base',
+        bio: 'Line drives to the face and throwing to first base give me mild anxiety.'
       }]
       return knex('player').insert(players)
     })

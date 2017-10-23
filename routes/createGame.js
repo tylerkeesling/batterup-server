@@ -11,10 +11,18 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+  let player_ids = req.body.players
   queries.createGame()
-    .then(gameId => {
-      queries.createPlayerGame(gameId[0], req.body.players)
-      res.json({message: 'success!'})
+    .then(game_id => {
+      return Promise.all(player_ids.map(player_id => {
+        return Promise.resolve(queries.createPlayerGame(game_id[0], player_id))
+      }))
+      .then((elem) => {
+        res.json({msgInside: elem})
+      })
+    })
+    .catch(err => {
+       res.json({msgErr: err})
     })
 })
 
@@ -27,8 +35,8 @@ router.get('/pg', (req, res) => {
 
 router.post('/test', (req, res) => {
   queries.createPlayerGame(3, [1,2,3,4])
-    .then(id => {
-      res.json(id)
+    .then(() => {
+      res.json({message: 'yay!'})
     })
 })
 
