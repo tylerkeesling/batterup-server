@@ -3,7 +3,8 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
-const roster = require('./routes/roster')
+const auth = require('./routes/auth')
+const players = require('./routes/players')
 const playerStats = require('./routes/playerStats')
 const createGame = require('./routes/createGame')
 
@@ -18,7 +19,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/api/v1/roster', roster)
+app.use('/api/v1/auth', auth)
+app.use('/api/v1/players', players)
 app.use('/api/v1/game', createGame)
 app.use('/api/v1/playerstats', playerStats)
 

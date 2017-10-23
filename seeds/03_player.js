@@ -1,4 +1,7 @@
 exports.seed = function(knex, Promise) {
+  var bcrypt = require('bcrypt')
+	var saltRounds = 8
+	var hash1 = bcrypt.hashSync('password', saltRounds)
   return knex.raw('DELETE FROM "player"; ALTER SEQUENCE player_id_seq RESTART WITH 12;')
     .then(() => {
       let players = [{
@@ -7,7 +10,7 @@ exports.seed = function(knex, Promise) {
         name: 'Tyler Keesling',
         phone: '6107425253',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Pitcher',
         bio: 'lorem ipsum'
       }, {
@@ -16,7 +19,7 @@ exports.seed = function(knex, Promise) {
         name: 'Rob Olson',
         phone: '8155206182',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Second Base',
         bio: 'lorem ipsum'
       }, {
@@ -25,7 +28,7 @@ exports.seed = function(knex, Promise) {
         name: 'Michelle Olson',
         phone: '4254448825',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Right Field',
         bio: 'lorem ipsum'
       }, {
@@ -34,7 +37,7 @@ exports.seed = function(knex, Promise) {
         name: 'Ty Blake',
         phone: '5557425253',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Shortstop',
         bio: 'lorem ipsum'
       }, {
@@ -43,7 +46,7 @@ exports.seed = function(knex, Promise) {
         name: 'Amanda Cusic',
         phone: '5558145111',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Left Field',
         bio: 'lorem ipsum'
       }, {
@@ -52,7 +55,7 @@ exports.seed = function(knex, Promise) {
         name: 'Robert Cusic',
         phone: '5558246969',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Left Center',
         bio: 'lorem ipsum'
       }, {
@@ -61,7 +64,7 @@ exports.seed = function(knex, Promise) {
         name: 'Cale Wharry',
         phone: '3032498575',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Right Center',
         bio: 'lorem ipsum'
       }, {
@@ -70,7 +73,7 @@ exports.seed = function(knex, Promise) {
         name: 'Jeff Scanlan',
         phone: '5558914511',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Third Base',
         bio: 'lorem ipsum'
       }, {
@@ -79,7 +82,7 @@ exports.seed = function(knex, Promise) {
         name: 'Kari Koelbel',
         phone: '5557204567',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'Catcher',
         bio: 'lorem ipsum'
       }, {
@@ -88,7 +91,7 @@ exports.seed = function(knex, Promise) {
         name: 'Rob Lawrence',
         phone: '7198223520',
         email: 'tyler.keesling@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: 'First Base',
         bio: 'lorem ipsum'
       }, {
@@ -97,7 +100,7 @@ exports.seed = function(knex, Promise) {
         name: 'Nick Dahl',
         phone: '3035026452',
         email: 'nicholas.b.dahl@gmail.com',
-        password: 'password' ,
+        password: hash1 ,
         position: '3rd Base',
         bio: 'Line drives to the face and throwing to first base give me mild anxiety.'
       }]

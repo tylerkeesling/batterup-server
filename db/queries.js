@@ -1,12 +1,14 @@
 const knex = require('./knex')
 
 module.exports = {
-  getAllPlayers: () => {
+  getPlayer: (teamId, playerId) => {
     return knex('player')
+      .select('name', 'phone', 'email', 'position', 'bio')
+      .where('id', playerId)
   },
   getRoster: (teamId) => {
     return knex('player')
-    .select('name', 'phone', 'email', 'position', 'bio')
+    .select('id', 'name', 'phone', 'email', 'position', 'bio')
     .where('team_id', teamId)
   },
   getAllStatsByTeamId: (teamId) => {
