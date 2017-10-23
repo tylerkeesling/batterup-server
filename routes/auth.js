@@ -23,7 +23,7 @@ router.post('/login', function(req, res) {
 			if (match) {
 				let payload = player[0]
 				delete payload.password
-				let token = jwt.sign(new Object({}, payload), process.env.SECRET_TOKEN)
+				let token = jwt.sign(Object({}, payload), process.env.SECRET_TOKEN)
 				res.json({token})
 			} else {
 				res.json({error: 'Email and/or password do no match.'})
