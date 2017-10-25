@@ -10,6 +10,7 @@ require('dotenv').config()
 router.post('/login', function(req, res) {
 	let email = req.body.email
 	let password = req.body.password
+	console.log(req.body);
 
 	knex('player')
     .where('email', email)
@@ -30,6 +31,9 @@ router.post('/login', function(req, res) {
 			}
 		}
 	})
+	.catch(err =>
+		res.json({'err': 'loser'})
+	)
 })
 
 module.exports = router

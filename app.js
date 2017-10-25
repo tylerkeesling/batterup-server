@@ -2,13 +2,14 @@ const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const app = express()
 
 const auth = require('./routes/auth')
 const players = require('./routes/players')
 const playerStats = require('./routes/playerStats')
 const createGame = require('./routes/createGame')
+const image = require('./routes/image')
 
-const app = express()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -23,6 +24,7 @@ app.use('/api/v1/auth', auth)
 app.use('/api/v1/players', players)
 app.use('/api/v1/game', createGame)
 app.use('/api/v1/playerstats', playerStats)
+app.use('/api/v1/image', image)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
