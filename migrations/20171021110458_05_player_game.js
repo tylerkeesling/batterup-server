@@ -15,5 +15,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.scheme.dropTableIfExists('player_game')
+  return knex.schema.dropTableIfExists('player_game')
 };

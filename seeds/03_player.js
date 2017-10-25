@@ -12,7 +12,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Pitcher',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(2).png'
       }, {
         id: 2,
         team_id: 1,
@@ -21,7 +22,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Second Base',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 3,
         team_id: 1,
@@ -30,7 +32,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Right Field',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 4,
         team_id: 1,
@@ -39,7 +42,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Shortstop',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 5,
         team_id: 1,
@@ -48,7 +52,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Left Field',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 6,
         team_id: 1,
@@ -57,7 +62,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Left Center',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 7,
         team_id: 1,
@@ -66,7 +72,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Right Center',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 8,
         team_id: 1,
@@ -75,7 +82,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Third Base',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 9,
         team_id: 1,
@@ -84,7 +92,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'Catcher',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 10,
         team_id: 1,
@@ -93,7 +102,8 @@ exports.seed = function(knex, Promise) {
         email: 'tyler.keesling@gmail.com',
         password: hash1 ,
         position: 'First Base',
-        bio: 'lorem ipsum'
+        bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }, {
         id: 11,
         team_id: 1,
@@ -102,7 +112,8 @@ exports.seed = function(knex, Promise) {
         email: 'nicholas.b.dahl@gmail.com',
         password: hash1 ,
         position: '3rd Base',
-        bio: 'Line drives to the face and throwing to first base give me mild anxiety.'
+        bio: 'Line drives to the face and throwing to first base give me mild anxiety.',
+        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
       }]
       return knex('player').insert(players)
     })

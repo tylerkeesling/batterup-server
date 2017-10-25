@@ -8,7 +8,7 @@ module.exports = {
   },
   getRoster: (teamId) => {
     return knex('player')
-    .select('id', 'name', 'phone', 'email', 'position', 'bio')
+    .select('id', 'name', 'phone', 'email', 'position', 'bio', 'photo')
     .where('team_id', teamId)
   },
   getAllStatsByTeamId: (teamId) => {

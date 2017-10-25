@@ -8,6 +8,7 @@ exports.up = function(knex, Promise) {
     table.string('password').notNullable()
     table.string('position')
     table.string('bio')
+		table.string('photo').defaultTo('https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg')
 	})
 };
 
