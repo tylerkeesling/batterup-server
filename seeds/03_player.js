@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Second Base',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(3).png'
       }, {
         id: 3,
         team_id: 1,
@@ -33,7 +33,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Right Field',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(4).png'
       }, {
         id: 4,
         team_id: 1,
@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Shortstop',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(5).png'
       }, {
         id: 5,
         team_id: 1,
@@ -53,7 +53,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Left Field',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(6).png'
       }, {
         id: 6,
         team_id: 1,
@@ -63,7 +63,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Left Center',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(7).png'
       }, {
         id: 7,
         team_id: 1,
@@ -73,7 +73,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Right Center',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/11234808_10207419533544393_8319026028767802000_o.jpg'
       }, {
         id: 8,
         team_id: 1,
@@ -83,7 +83,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Third Base',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(8).png'
       }, {
         id: 9,
         team_id: 1,
@@ -93,7 +93,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'Catcher',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/10632761_10150710595904953_454935543367963912_n.jpg'
       }, {
         id: 10,
         team_id: 1,
@@ -103,7 +103,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: 'First Base',
         bio: 'Bacon ipsum dolor amet kielbasa drumstick salami sausage, picanha flank cupim pork chop biltong. Hamburger andouille leberkas short ribs turkey ball tip cow pork loin kielbasa porchetta drumstick swine.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(10).png'
       }, {
         id: 11,
         team_id: 1,
@@ -113,7 +113,7 @@ exports.seed = function(knex, Promise) {
         password: hash1 ,
         position: '3rd Base',
         bio: 'Line drives to the face and throwing to first base give me mild anxiety.',
-        photo: 'https://pbs.twimg.com/media/BY0WJYEIEAI02Cx.jpg'
+        photo: 'https://s3-us-west-2.amazonaws.com/sluggersimagebucket/canva-photo-editor+(11).png'
       }]
       return knex('player').insert(players)
     })
