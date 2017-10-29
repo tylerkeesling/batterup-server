@@ -14,7 +14,7 @@ module.exports = {
   getAllStatsByTeamId: (teamId) => {
     return knex('player')
       .select('name', 'player.id', 'team_id', 'game_id', 'at_bat',
-      'single', 'double', 'triple', 'homerun', 'rbi')
+      'single', 'double', 'triple', 'homerun', 'rbi', 'walk')
       .where('team_id', teamId)
       .innerJoin('player_game', 'player.id', 'player_id')
   },

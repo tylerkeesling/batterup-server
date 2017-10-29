@@ -1,11 +1,9 @@
 function formatPlayerStats(playerStats) {
   let reformatStats = {
-    "player": {
-      "player_id": playerStats[0].id,
+      "id": playerStats[0].id,
       "team_id": playerStats[0].team_id,
-      "name": playerStats[0].name
-    },
-    "game_stats": formatGameStats(playerStats)
+      "name": playerStats[0].name,
+      "stats": formatGameStats(playerStats)
   }
   return reformatStats
 }
