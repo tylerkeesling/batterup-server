@@ -38,5 +38,13 @@ module.exports = {
   },
   seePlayerGame: () => {
     return knex('player_game')
+  },
+  updatePlayerGame: (id, body) => {
+    console.log('id', id);
+    console.log('body', body);
+    return knex('player_game')
+      .where('id', id)
+      .update(body)
+      .returning('*')
   }
 }

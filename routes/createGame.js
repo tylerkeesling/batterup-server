@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
   let player_ids = req.body.players
-  console.log('req.body', req.body);
   queries.createGame()
     .then(game_id => {
       return Promise.all(player_ids.map(player_id => {
@@ -37,10 +36,13 @@ router.get('/pg', (req, res) => {
     })
 })
 
-router.post('/test', (req, res) => {
-  queries.createPlayerGame(3, [1,2,3,4])
-    .then(() => {
-      res.json({message: 'yay!'})
+router.put('/:id', (req, res) => {
+  queries.updatePlayerGame(req.params.id, req.body)
+    .then(object => {
+      res.json(object)
+    })
+    .catch(error => {
+      res.json({"error": error})
     })
 })
 
