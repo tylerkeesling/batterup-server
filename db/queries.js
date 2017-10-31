@@ -32,9 +32,13 @@ module.exports = {
       .returning('id')
   },
   createPlayerGame: (game_id, player_id) => {
-      return knex.insert({ 'player_id': player_id, 'game_id': game_id })
+    return knex.insert({ 'player_id': player_id, 'game_id': game_id })
       .into('player_game')
       .returning('*')
+      .then(object => {
+        console.log(object);
+        return object
+      })
   },
   seePlayerGame: () => {
     return knex('player_game')
