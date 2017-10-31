@@ -35,17 +35,11 @@ module.exports = {
     return knex.insert({ 'player_id': player_id, 'game_id': game_id })
       .into('player_game')
       .returning('*')
-      .then(object => {
-        console.log(object);
-        return object
-      })
   },
   seePlayerGame: () => {
     return knex('player_game')
   },
   updatePlayerGame: (id, body) => {
-    console.log('id', id);
-    console.log('body', body);
     return knex('player_game')
       .where('id', id)
       .update(body)

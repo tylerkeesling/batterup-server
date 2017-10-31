@@ -3,6 +3,11 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const app = express()
+const sockets = require('./sockets')
+const http = require('http')
+const server = http.createServer(app)
+const io = require('socket.io')(server)
+sockets(io)
 
 const auth = require('./routes/auth')
 const players = require('./routes/players')
@@ -44,4 +49,4 @@ app.use(function(err, req, res, next) {
   res.render('error')
 });
 
-module.exports = app
+module.exports = { app, server }
